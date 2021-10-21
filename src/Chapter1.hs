@@ -193,10 +193,7 @@ ghci> :q
 -- For example:
 --
 -- >>> :t False
--- WAS WAS WAS False :: Bool
--- WAS WAS NOW False :: Bool
--- WAS NOW False :: Bool
--- NOW False :: Bool
+-- False :: Bool
 --
 -- "::" in Haskell indicates that the type of the expression before, would be
 -- specified after these symbols.
@@ -208,55 +205,31 @@ ghci> :q
 -- > Try to guess first and then compare your expectations with GHCi output
 --
 -- >>> :t True
--- WAS WAS WAS True :: Bool
--- WAS WAS NOW True :: Bool
--- WAS NOW True :: Bool
--- NOW True :: Bool
+-- True :: Bool
 -- >>> :t 'a'
--- WAS WAS WAS 'a' :: Char
--- WAS WAS NOW 'a' :: Char
--- WAS NOW 'a' :: Char
--- NOW 'a' :: Char
+-- 'a' :: Char
 -- >>> :t 42
--- WAS WAS WAS 42 :: Num p => p
--- WAS WAS NOW 42 :: Num p => p
--- WAS NOW 42 :: Num p => p
--- NOW 42 :: Num p => p
+-- 42 :: Num p => p
 --
 -- A pair of boolean and char:
 -- >>> :t (True, 'x')
--- WAS WAS WAS (True, 'x') :: (Bool, Char)
--- WAS WAS NOW (True, 'x') :: (Bool, Char)
--- WAS NOW (True, 'x') :: (Bool, Char)
--- NOW (True, 'x') :: (Bool, Char)
+-- (True, 'x') :: (Bool, Char)
 --
 -- Boolean negation:
 -- >>> :t not
--- WAS WAS WAS not :: Bool -> Bool
--- WAS WAS NOW not :: Bool -> Bool
--- WAS NOW not :: Bool -> Bool
--- NOW not :: Bool -> Bool
+-- not :: Bool -> Bool
 --
 -- Boolean 'and' operator:
 -- >>> :t (&&)
--- WAS WAS WAS (&&) :: Bool -> Bool -> Bool
--- WAS WAS NOW (&&) :: Bool -> Bool -> Bool
--- WAS NOW (&&) :: Bool -> Bool -> Bool
--- NOW (&&) :: Bool -> Bool -> Bool
+-- (&&) :: Bool -> Bool -> Bool
 --
 -- Addition of two numbers:
 -- >>> :t (+)
--- WAS WAS WAS (+) :: Num a => a -> a -> a
--- WAS WAS NOW (+) :: Num a => a -> a -> a
--- WAS NOW (+) :: Num a => a -> a -> a
--- NOW (+) :: Num a => a -> a -> a
+-- (+) :: Num a => a -> a -> a
 --
 -- Maximum of two values:
 -- >>> :t max
--- WAS WAS WAS max :: Ord a => a -> a -> a
--- WAS WAS NOW max :: Ord a => a -> a -> a
--- WAS NOW max :: Ord a => a -> a -> a
--- NOW max :: Ord a => a -> a -> a
+-- max :: Ord a => a -> a -> a
 --
 -- You might not understand each type at this moment, but don't worry! You've only
 -- started your Haskell journey. Types will become your friends soon.
