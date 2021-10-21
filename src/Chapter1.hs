@@ -541,6 +541,7 @@ mid x y z
   | x >= y && x >= z && y >= z = y
   | x >= y && x >= z && y <= z = z
   | x <= y && x <= z && z <= y = z
+  | x <= y && x <= z && y <= z = y
   | otherwise = x
 
 -- |
